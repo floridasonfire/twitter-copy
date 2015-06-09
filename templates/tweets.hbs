@@ -1,14 +1,18 @@
-Tweets
 <ul>
   {{#each}}
     <li>{{body}}</li>
   {{/each}}
 </ul>
 
-<form>
-  <div class="form-group">
-    {{textarea id="body" rows="10" cols="70" value=body}}
-  </div>
+<a href="#/tweets" {{action 'sortByTitle'}}>Sort By Title</a>
 
-    <button class="btn btn-primary" {{action 'addTweet'}}>Add Tweet</button>
-</form>
+
+{{#if isAdding}}
+
+  <button class="btn btn-primary" {{action 'enterTweet'}}>Add Tweet</button>
+
+{{else}}
+
+<button class="btn btn-primary" {{action 'addNewTweet'}}>New Tweet</button>
+
+{{/if}}
