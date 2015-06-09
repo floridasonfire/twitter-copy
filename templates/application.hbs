@@ -2,7 +2,22 @@
   <div class="jumbotron">
     <img class="jumbo-image" src="images/jumbo.png" />
   </div>
+  <div class="row1">
+    <img class="searchbar" src="images/searchbar.png" />
+  </div>
 
+  <div class="row2">
+    <div class="col col1">
+      <img class="col1-image" src="images/column1.png" />
+      <div class="menu">
+        <ul class="menu-list">
+          <li><img class="arrow-image" src="images/arrow_image.png" />
+            {{#link-to 'home' classNames="menu-link"}}Home{{/link-to}}</li>
+          <li><img class="arrow-image" src="images/arrow_image.png" />
+            {{#link-to 'tweets' classNames="menu-link"}}Tweets{{/link-to}}</li>
+        </ul>
+      </div>
+    </div>
   {{outlet}}
-
+  </div>
 </div>
