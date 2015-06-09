@@ -6,16 +6,35 @@
 .col2-image{
   width:100%;
 }
+.row1{
+  width:100%;
+  height:90px;
+  border-bottom:1px solid lightgrey;
 
+}
+
+.row2{
+  margin-top:4%;
+  width:100%;
+}
+.col{
+  float:left;
+}
 .col1{
   width:40%;
+  po
 }
 .col2{
   width:60%;
+  background-color:lightgrey;
 }
 
-.col{
-  float:left;
+.tweet-div{
+  margin:10px;
+  padding:20px;
+  background-color:white;
+  border:1px solid darkgrey;
+  border-radius:3px;
 }
 
 .menu-list{
@@ -49,17 +68,6 @@
 .jumbotron{
   padding:0;
   margin:0;
-}
-
-.row1{
-  width:100%;
-  height:90px;
-  border-bottom:1px solid lightgrey;
-
-}
-
-.row2{
-  margin-top:4%;
 }
 
 .searchbar{
