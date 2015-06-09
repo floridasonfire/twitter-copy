@@ -7,4 +7,11 @@ var tweetytweets = [
   body: "I did!", time:'Tue Jun 09 2015 13:41:20 GMT-0700 (PDT)' },
 {
   id: '3',
-  body: "I did thee a puddy tat!", time:'Tue Jun 09 2015 14:41:20 GMT-0700 (PDT)' }]
+  body: "I did thee a puddy tat!", time:'Tue Jun 09 2015 14:41:20 GMT-0700 (PDT)' }];
+
+var tweetComments = [
+  {
+    id: '1',
+    text: "great to hear!",
+    tweetytweets_id: '3'
+  } ]
