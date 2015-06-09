@@ -4,3 +4,11 @@ Tweets
     <li>{{body}}</li>
   {{/each}}
 </ul>
+
+<form>
+  <div class="form-group">
+    {{textarea id="body" rows="10" cols="70" value=body}}
+  </div>
+
+    <button class="btn btn-primary" {{action 'addTweet'}}>Add Tweet</button>
+</form>
