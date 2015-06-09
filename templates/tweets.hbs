@@ -8,9 +8,13 @@
 
 
 {{#if isAdding}}
+  <form>
 
-  <button class="btn btn-primary" {{action 'enterTweet'}}>Add Tweet</button>
-
+    <div class="form-group">
+      {{textarea id="body" rows="15" cols="40" value=body}}
+    </div>
+    <button class="btn btn-default" {{action 'enterTweet'}}>Add Tweet</button>
+  </form>
 {{else}}
 
 <button class="btn btn-primary" {{action 'addNewTweet'}}>New Tweet</button>

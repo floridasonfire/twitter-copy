@@ -10,6 +10,7 @@ Twitter.TweetsController = Ember.ArrayController.extend({
     },
     enterTweet: function(){
       this.set('isAdding', false);
+      this.addObject({id: '4', body: "NEW TWEET" });
     }
   }
 });
