@@ -1,17 +1,17 @@
 {{#if isAdding}}
 
-  <form>
-
+  <form id="tweet-form">
     <div class="form-group">
       {{input id="body" value=body}}
     </div>
     <button class="btn btn-default" {{action 'enterTweet'}}>Add Tweet</button>
   </form>
+
 {{else}}
 
-<button class="btn btn-primary" {{action 'addNewTweet'}}>New Tweet</button>
+<button class="btn btn-primary addButton" {{action 'addNewTweet'}}>New Tweet</button>
 {{/if}}
 
 {{#each}}
-  <div class="tweet-div">{{time}}<br />{{body}}</div>
+  <div class="tweet-div"><span class="time" {{action 'collapse'}}>{{time}}<br /><br /></span><span class="tweet"{{action 'expand'}}>{{body}}</span></div>
 {{/each}}

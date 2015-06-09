@@ -1,10 +1,18 @@
+body {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: 300;
+}
+
 .col1-image{
   padding:0;
   margin:0;
-  height:600px;
+  height:auto;
+  max-width:100%;
+
 }
 .col2-image{
   width:100%;
+  max-width:100%;
 }
 .row1{
   width:100%;
@@ -15,31 +23,39 @@
 
 .row2{
   margin-top:4%;
-  width:100%;
 }
 .col{
   float:left;
 }
+
 .col1{
   width:40%;
-  po
 }
+
 .col2{
-  width:60%;
   background-color:lightgrey;
+  width:50%;
+  height:auto;
+  margin:4%;
 }
 
 .tweet-div{
   margin:10px;
-  padding:20px;
+  padding:10px;
+  display:block;
+  width:90%;
+  text-align:left;
   background-color:white;
   border:1px solid darkgrey;
   border-radius:3px;
+  cursor:pointer;
 }
 
 .menu-list{
   list-style:none;
   font-size:28px;
+  padding:10px;
+  margin:0;
 }
 
 .menu-link{
@@ -76,4 +92,25 @@
   display:block;
   margin:0 auto;
   padding-top:7px;
+}
+
+#body{
+  margin:10px;
+}
+.btn{
+  margin:10px;
+}
+
+.addButton{
+  margin-top:71px;
+}
+
+.time{
+  display:none;
+  font-size:15px;
+}
+
+.tweet{
+  font-size: 20px;
+  padding-left:15px;
 }

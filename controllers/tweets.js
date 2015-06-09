@@ -7,11 +7,18 @@ Twitter.TweetsController = Ember.ArrayController.extend({
 
     },
     enterTweet: function(){
-      var toDate = new Date();
+      var toDaysDate = new Date();
       this.set('isAdding', false);
-      this.addObject({id: '4', body: this.body, time: toDate});
+      this.addObject({id: '4', body: this.body, time: toDaysDate});
       this.set('sortProperties', ['time']);
       this.set('sortDescending', true);
-    }
+    },
+    expand: function(){
+
+      $('.time').show();
+    },
+    collapse: function(){
+      $('.time').hide();
+    },
   }
 });
